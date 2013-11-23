@@ -9,29 +9,37 @@ REM  Trademarks:
 REM  Originalname: mc_start.exe
 REM  Comments: Script for launch Minecraft without official Mojang launcher
 REM  Productversion:  1. 0. 0. 0
-REM  Fileversion:  1. 1. 0. 0
+REM  Fileversion:  1. 2. 0. 0
 REM  Internalname: 
 REM  Appicon: minecraft.ico
 REM  AdministratorManifest: No
 REM  QBFC Project Options End
 ECHO ON
-::
 @echo off
 cd \
 
 :: main directory of the game
 set MC_DIR="C:\IIIypuk\Minecraft"
+
 :: look README.md file
 set NATIVES_DIR="%MC_DIR%\natives\1.7.2"
+
 :: Are stored here...
 :: saves/, resourcepacks/ and screenshots/ dirs
 :: and options.txt and servers.dat files
 set GAME_DIR="%MC_DIR%\profile"
+
 :: libraries and resource dir (requires no changes)
 set ASSETS_DIR="%MC_DIR%\assets"
 
-set PLAYER="IIIypuk"   :: player nickname (the over head)
-set VERSION="1.7.2" :: version minecraft (from versions/ dir)
+:: version minecraft (from versions/ dir)
+set VERSION="1.7.2"
+
+:: player nickname (the over head)
+if /i not exist "%GAME_DIR%\nickname.txt" (
+  echo Steve > "%GAME_DIR%\nickname.txt"
+)
+set /p PLAYER= < "%GAME_DIR%\nickname.txt"
 
 
 :: running minecraft
