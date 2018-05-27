@@ -2,7 +2,30 @@ Minecraft Batch Launcher
 ========================
 
 ### English help ###
-Pull-request, please!
+## 1. Installation ##
+Get to the [launcher page](https://github.com/IIIypuk/minecraft-launcher/blob/master/mc_start.bat). Click with right mouse button on **Raw** then click on **Save as...** and save file to your desired location.
+
+## 2. Minecraft Client ##
+By default, script will run Minecraft from the default directory `%APPDATA%\.minecraft`.  
+If you don't have a client, download [launcher](https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar), log in with Demo account and download Minecraft client.  
+After this, you may close official launcher and enjoy playing full version of Minecraft.
+
+## 3. Setting up ##
+This launcher can be customized by editing parameters in source file.
+Use right mouse button to open a context menu, then click **edit**.
+
+**List of parameters and values:**
+
++ `%MC_DIR%` - Minecraft client directory. By default it's `%APPDATA%\.minecraft`.
++ `%GAME_DIR%` - user game files. Resourcepacks, saves, screenshots, etc.
++ `%ASSETS_DIR%` - game libraries directory. Don't modify anything there, unless you know what are you doing.
++ `%NATIVES_DIR%` - native game libraries directory, which are used to launch game on Windows.
+[Download](https://github.com/IIIypuk/minecraft-launcher/raw/master/natives/1.11.2.7z) and unpack this to the `versions\1.11.2`, which is located nearby to the Minecraft client.
++ `%PLAYER%` - player name (shown above the head), by default it's **Steve**.
++ `%WIDTH%` - window width.
++ `%HEIGHT%` - window height.
++ `%RAM%` - amount of RAM (heap size) used by the JVM. **512MB** by default. If your PC has more than **4GB** of RAM, you can surely set it to `-Xmx2G`.
+
 
 ### Русская справка ###
 ## 1. Установка ##
