@@ -20,7 +20,7 @@ Use right mouse button to open a context menu, then click **edit**.
 + `%GAME_DIR%` - user game files. Resourcepacks, saves, screenshots, etc.
 + `%ASSETS_DIR%` - game libraries directory. Don't modify anything there, unless you know what are you doing.
 + `%NATIVES_DIR%` - native game libraries directory, which are used to launch game on Windows.
-[Download](https://github.com/IIIypuk/minecraft-launcher/raw/master/natives/1.11.2.7z) and unpack this to the `versions\1.11.2`, which is located nearby to the Minecraft client.
+[Download](https://github.com/IIIypuk/minecraft-launcher/raw/master/natives/1.12.2.zip) and unpack this to the `versions\`, which is located nearby to the Minecraft client.
 + `%PLAYER%` - player name (shown above the head), by default it's **Steve**.
 + `%WIDTH%` - window width.
 + `%HEIGHT%` - window height.
@@ -46,7 +46,7 @@ Use right mouse button to open a context menu, then click **edit**.
 + `%GAME_DIR%` - директория с файлами пользователя. Ресурс-паки, сохранения, скриншоты и др.
 + `%ASSETS_DIR%` - директория с библиотеками. Изменять только если Вы понимаете что желаете.
 + `%NATIVES_DIR%` - директория с библиотеками, которые требуеются для запуск игры под Windows.
-[Скачиваем](https://github.com/IIIypuk/minecraft-launcher/raw/master/natives/1.11.2.7z) их и распаковываем в директорию `versions\1.11.2`, которая находится в директории с клиентом Minecraft.
+[Скачиваем](https://github.com/IIIypuk/minecraft-launcher/raw/master/natives/1.12.2.zip) их и распаковываем в директорию `versions\`, которая находится в директории с клиентом Minecraft.
 + `%PLAYER%` - имя игрока. По умолчанию **Steve**.
 + `%WIDTH%` - ширина окна в оконном режиме.
 + `%HEIGHT%` - высота окна в оконном режиме.
