@@ -15,7 +15,7 @@ set "ASSETS_DIR=%MC_DIR%\assets"
 set "ASSETS_INDEX=1.14"
 
 :: version minecraft (from versions/ dir)
-set "VERSION=1.14.2"
+set "VERSION=1.14.3"
 
 :: get archive from natives/ dir
 set "NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives"
