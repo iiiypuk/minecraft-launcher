@@ -2,30 +2,30 @@
 title Minecraft Launcher
 
 :: main directory of the game
-set MC_DIR=%APPDATA%\.minecraft
+set "MC_DIR=%APPDATA%\.minecraft"
 
-:: Are stored here...
+:: Is stored here...
 :: saves/, resourcepacks/ and screenshots/ dirs
 :: and options.txt and servers.dat files
-set GAME_DIR=%MC_DIR%\profile
+set "GAME_DIR=%MC_DIR%\profile"
 
 :: libraries and resource dir (requires no changes)
-set ASSETS_DIR=%MC_DIR%\assets
+set "ASSETS_DIR=%MC_DIR%\assets"
 
-set ASSETS_INDEX=1.14
+set "ASSETS_INDEX=1.14"
 
 :: version minecraft (from versions/ dir)
-set VERSION=1.14.2
+set "VERSION=1.14.2"
 
 :: get archive from natives/ dir
-set NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives-246558324433200
+set "NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives-246558324433200"
 
 :: player nickname (the over head)
-set PLAYER=Steve
+set "PLAYER=Steve"
 
 :: resolution
-set WIDTH=800
-set HEIGHT=640
+set "WIDTH=800"
+set "HEIGHT=640"
 
 :: running minecraft
 %SystemDrive%
