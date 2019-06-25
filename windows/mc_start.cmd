@@ -18,7 +18,8 @@ set "ASSETS_INDEX=1.14"
 set "VERSION=1.14.2"
 
 :: get archive from natives/ dir
-set "NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives-246558324433200"
+set "NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives"
+FOR /D %%i in ("%NATIVES_DIR%*") DO set "Natives_DIR=%%i"
 
 :: player nickname (the over head)
 set "PLAYER=Steve"
