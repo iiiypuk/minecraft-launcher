@@ -3,7 +3,7 @@ Minecraft Batch Launcher
 
 ### English help ###
 ## 1. Installation ##
-Get to the [launcher page](https://github.com/IIIypuk/minecraft-launcher/blob/master/mc_start.bat). Click with right mouse button on **Raw** then click on **Save as...** and save file to your desired location.
+Get to the [launcher page](https://github.com/IIIypuk/minecraft-launcher/blob/master/windows/mc_start.bat). Click with right mouse button on **Raw** then click on **Save as...** and save file to your desired location.
 
 ## 2. Minecraft Client ##
 By default, script will run Minecraft from the default directory `%APPDATA%\.minecraft`.  
