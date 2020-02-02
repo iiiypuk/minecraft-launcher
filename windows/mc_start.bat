@@ -1,6 +1,9 @@
 @echo off
 title Minecraft Launcher
 
+:: set username
+set /p player=What username would you like?  
+
 :: main directory of the game
 set MC_DIR=%APPDATA%\.minecraft
 
@@ -21,7 +24,7 @@ set VERSION=1.14.3
 set NATIVES_DIR=%MC_DIR%\versions\%VERSION%\%VERSION%-natives
 
 :: player nickname (the over head)
-set PLAYER=Steve
+set PLAYER=%player%
 
 :: resolution
 set WIDTH=800
