@@ -1,4 +1,4 @@
-Minecraft Batch Launcher
+Minecraft Batch Launcher (not updated)
 ========================
 
 ### English help ###
