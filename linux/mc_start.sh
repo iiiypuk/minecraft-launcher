@@ -1,3 +1,5 @@
+echo -ne "\033]2;Minecraft Launcher\007"
+
 # A minecraft root directory
 MC_DIR=~/.minecraft
 
