@@ -3,6 +3,11 @@ echo -ne "\033]2;Minecraft Launcher\007"
 # A minecraft root directory
 MC_DIR=~/.minecraft
 
+# Are stored here...
+# saves/, resourcepacks/ and screenshots/ dirs
+# and options.txt and servers.dat files
+GAME_DIR=%MC_DIR
+
 # Assets location
 ASSETS_DIR=$MC_DIR/assets
 ASSETS_INDEX=1.15
@@ -33,6 +38,7 @@ net.minecraft.client.main.Main \
 --username $PLAYER_NAME \
 --version $GAME_VERSION \
 --accessToken 0 --userProperties {} \
+--gameDir %GAME_DIR% \
 --assetsDir $ASSETS_DIR \
 --assetIndex $ASSETS_INDEX \
 --width $WINDOW_W --height $WINDOW_H
