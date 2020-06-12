@@ -1,5 +1,7 @@
 Minecraft Java Edition Batch Launcher
 ========================
+[![https://img.shields.io/badge/Download-this-lightgrey?style=for-the-badge](https://img.shields.io/badge/Download-this-lightgrey?style=for-the-badge)](https://github.com/iiiypuk/minecraft-launcher/releases/latest)
+
 ### Features:
 * Open source. Just launch the game, nothing more
 * No need for extra deps
