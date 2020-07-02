@@ -2,8 +2,8 @@ English help
 ============
 ## 1. Installing
 Download of [actually](https://github.com/iiiypuk/minecraft-launcher/releases/latest) version launcher.
-Next [download](https://www.minecraft.net/download) Minecraft and start Demo mode game **1.15.2** version. After successfully run close game.
-Download required [libraries](https://mega.nz/#F!hUNg0Y6I!93cYw1NZg4MUWUHaVrCO7w) for run game for **your system** and game version of **1.15.2**.
+Next [download](https://www.minecraft.net/download) Minecraft and start Demo mode. After successfully run close game.
+Download required [libraries](https://mega.nz/#F!hUNg0Y6I!93cYw1NZg4MUWUHaVrCO7w) for run game for **your system** and game **version**.
 
 ## 2. Client Minecraft
 By default script configured for run Minecraft from default directory:
