@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 
+"""
+    Script for generate Minecraft *.jar libraries
+    from version.json file.
+
+    usage^
+        $ ./make_libs.py > libs.txt
+
+    for windows need replace `$MC_DIR` to `%MC_DIR%`
+    and `:` to `;`
+"""
+
 import json
 
 __author__ = 'Alexander Popov'
@@ -8,6 +19,8 @@ __license__ = 'Unlicense'
 
 
 def parse_libs():
+    """ Make libraries list from version.json file """
+
     _ = []
 
     with open('./version.json', 'r', encoding='utf-8') as f:
