@@ -1,47 +1,32 @@
 #!/usr/bin/env python3
 
-"""
-    Script for generate Minecraft *.jar libraries
-    from version.json file.
-
-    usage^
-        $ ./make_libs.py > libs.txt
-
-    for windows need replace `$MC_DIR` to `%MC_DIR%`
-    and `:` to `;`
-"""
-
 import json
 import click
 
-__author__ = 'Alexander Popov'
-__version__ = '1.0.0'
-__license__ = 'Unlicense'
+__author__ = "Alexander Popov"
+__version__ = "1.0.0"
+__license__ = "Unlicense"
 
 
 @click.command()
-@click.option('--platform', default='win',
-              help='Output platform (win, unix).')
+@click.option("--platform", default="win", help="Output platform (win, unix).")
 def make_output(platform):
     """ Return libraries list """
 
     libraries = parse_libs()
 
-    _ = {
-        'win': ';',
-        'unix': ':'
-    }
+    _ = {"win": ";", "unix": ":"}
 
     output = str()
 
     for lib in libraries:
-        output = output + '$MC_DIR/libraries/{0}'.format(lib) + _[platform]
+        output = output + "$MC_DIR/libraries/{0}".format(lib) + _[platform]
 
-    output = output + '$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar'
+    output = output + "$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
 
-    if platform == 'win':
-        output = output.replace('$MC_DIR', '%MC_DIR%')
-        output = output.replace('$GAME_VERSION', '%GAME_VERSION%')
+    if platform == "win":
+        output = output.replace("$MC_DIR", "%MC_DIR%")
+        output = output.replace("$GAME_VERSION", "%GAME_VERSION%")
 
     click.echo(output)
 
@@ -51,14 +36,14 @@ def parse_libs():
 
     _ = []
 
-    with open('./version.json', 'r', encoding='utf-8') as f:
+    with open("./version.json", "r", encoding="utf-8") as f:
         file_data = json.loads(f.read())
 
-        for lib in file_data['libraries']:
-            _.append(lib['downloads']['artifact']['path'])
+        for lib in file_data["libraries"]:
+            _.append(lib["downloads"]["artifact"]["path"])
 
-    return(_)
+    return _
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     make_output()
