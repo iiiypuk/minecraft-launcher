@@ -12,10 +12,38 @@
 """
 
 import json
+import click
 
 __author__ = 'Alexander Popov'
-__version__ = '0.1.0'
+__version__ = '1.0.0'
 __license__ = 'Unlicense'
+
+
+@click.command()
+@click.option('--platform', default='win',
+              help='Output platform (win, unix).')
+def make_output(platform):
+    """ Return libraries list """
+
+    libraries = parse_libs()
+
+    _ = {
+        'win': ';',
+        'unix': ':'
+    }
+
+    output = str()
+
+    for lib in libraries:
+        output = output + '$MC_DIR/libraries/{0}'.format(lib) + _[platform]
+
+    output = output + '$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar'
+
+    if platform == 'win':
+        output = output.replace('$MC_DIR', '%MC_DIR%')
+        output = output.replace('$GAME_VERSION', '%GAME_VERSION%')
+
+    click.echo(output)
 
 
 def parse_libs():
@@ -33,9 +61,4 @@ def parse_libs():
 
 
 if __name__ == '__main__':
-    libraries = parse_libs()
-
-    for lib in libraries:
-        print('$MC_DIR/libraries/{0}'.format(lib), end=':')
-
-    print('$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar')
+    make_output()
