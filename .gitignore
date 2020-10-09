@@ -1,3 +1,4 @@
 env
-version.json
-libs.txt
+tools/version.json
+tools/libs.txt
+for_build/mc_start.*
