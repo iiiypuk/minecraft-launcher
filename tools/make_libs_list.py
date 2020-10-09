@@ -4,7 +4,7 @@ import json
 import click
 
 __author__ = "Alexander Popov"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __license__ = "Unlicense"
 
 
@@ -29,6 +29,11 @@ def make_output(platform):
         output = output.replace("$GAME_VERSION", "%GAME_VERSION%")
 
     click.echo(output)
+
+    if platform == "win":
+        print("\nWindows generate libraries list complete!")
+    elif platform == "unix":
+        print("\nLinux generate libraries list complete!")
 
 
 def parse_libs():
