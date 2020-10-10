@@ -10,30 +10,43 @@ __license__ = "Unlicense"
 
 @click.command()
 @click.option("--platform", default="win", help="Output platform (win, unix).")
-def make_output(platform):
+@click.option("--output", default="tty", help="Output option (tty, txt).")
+def make_output(platform, output):
     """ Return libraries list """
 
     libraries = parse_libs()
 
+    # OS libs separate
     _ = {"win": ";", "unix": ":"}
 
-    output = str()
+    out_lib = str()
 
+    # Generate libraries list
     for lib in libraries:
-        output = output + "$MC_DIR/libraries/{0}".format(lib) + _[platform]
+        out_lib = out_lib + "$MC_DIR/libraries/{0}".format(lib) + _[platform]
 
-    output = output + "$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
+    out_lib = out_lib + "$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
 
+    # Replace for OS shell variable symbol
     if platform == "win":
-        output = output.replace("$MC_DIR", "%MC_DIR%")
-        output = output.replace("$GAME_VERSION", "%GAME_VERSION%")
+        out_lib = out_lib.replace("$MC_DIR", "%MC_DIR%")
+        out_lib = out_lib.replace("$GAME_VERSION", "%GAME_VERSION%")
 
-    click.echo(output)
+    if output == "tty":
+        click.echo(out_lib)
 
-    if platform == "win":
-        print("\nWindows generate libraries list complete!")
-    elif platform == "unix":
-        print("\nLinux generate libraries list complete!")
+        if platform == "win":
+            print("\nWindows generate libraries list complete!")
+        elif platform == "unix":
+            print("\nLinux generate libraries list complete!")
+    elif output == "txt":
+        with open("./libs.txt", "w", encoding="utf-8") as f:
+            f.write(out_lib)
+
+        if platform == "win":
+            print("\nWindows generate libraries list complete!\n" "See libs.txt file.")
+        elif platform == "unix":
+            print("\nLinux generate libraries list complete!\n" "See libs.txt file.")
 
 
 def parse_libs():
