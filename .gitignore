@@ -2,3 +2,5 @@ env
 tools/version.json
 tools/libs.txt
 for_build/mc_start.*
+for_build/*.zip
+Minecraft.jar
