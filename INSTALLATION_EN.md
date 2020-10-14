@@ -7,10 +7,10 @@ Download required [libraries](https://mega.nz/#F!hUNg0Y6I!93cYw1NZg4MUWUHaVrCO7w
 
 ## 2. Client Minecraft
 By default script configured for run Minecraft from default directory:
-for Windows is `%APPDATA%\.minecraft`.
+for Windows is `%APPDATA%\.minecraft`.  
 for Linux is `~/.minecraft`.
 
-Extract launcher files in game directory, if necessary, you can create a shortcut on the desktop.
+Extract launcher files in game directory, if necessary, you can create a shortcut on the desktop.  
 Start. ENJOY!
 
 ## 3. Configuration
