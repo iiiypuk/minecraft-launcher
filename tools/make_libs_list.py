@@ -5,7 +5,7 @@ import json
 import click
 
 __author__ = "Alexander Popov"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __license__ = "Unlicense"
 
 
@@ -18,7 +18,7 @@ def make_output(platform, output):
     libraries = parse_libs()
 
     # OS libs separate
-    _ = {"win": ";", "linux": ":", "darwin": ":"}
+    _ = {"win32": ";", "linux": ":", "darwin": ":"}
 
     out_lib = str()
 
