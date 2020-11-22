@@ -13,7 +13,7 @@ ASSETS_DIR=$MC_DIR/assets
 ASSETS_INDEX=1.16
 
 # Version to use
-GAME_VERSION=1.16.3
+GAME_VERSION=1.16.4
 
 # Native libs location
 NATIVES_DIR=$MC_DIR/bin/$GAME_VERSION
