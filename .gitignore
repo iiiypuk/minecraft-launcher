@@ -1,6 +1,5 @@
 venv
 tools/version.json
 tools/libs.txt
-for_build/mc_start.*
-for_build/*.zip
+for_build/
 Minecraft.jar
