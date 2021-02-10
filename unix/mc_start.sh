@@ -1,4 +1,8 @@
+#!/bin/sh
 echo -ne "\033]2;Minecraft Launcher\007"
+
+# Set username
+read -p "What username would you like?: " player
 
 # A minecraft root directory
 MC_DIR=~/.minecraft
@@ -19,7 +23,7 @@ GAME_VERSION=1.16.5
 NATIVES_DIR=$MC_DIR/bin/$GAME_VERSION
 
 # Player name
-PLAYER_NAME=Steve
+PLAYER_NAME=$player
 
 # Game window resolution
 WINDOW_W=800
