@@ -10,6 +10,6 @@
 * ⚙️ Нет необходимости в конфигурационных файлах
 
 [GitHub](https://github.com/iiiypuk/minecraft-launcher/)
-[Начать](/index.html#/readme)
+[Начать](readme)
 
 ![color](#F8F8F8)
