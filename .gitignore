@@ -1,4 +1,6 @@
 venv
+node_modules/
+package-lock.json
 tools/version.json
 tools/libs.txt
 for_build/
