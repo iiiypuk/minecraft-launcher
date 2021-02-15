@@ -1,0 +1,2 @@
+- [ ] Script for automatic make release **zip**
+- [ ] Make binary archives with this launcher for vanilla and forge version
