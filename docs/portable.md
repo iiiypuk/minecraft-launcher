@@ -112,3 +112,5 @@ net.minecraft.client.main.Main ^
 --width %WINDOW_W% ^
 --height %WINDOW_H%
 ```
+
+Готовые сборки ванильного Minecraft + Forge вы можете скачать по [этой ссылке](https://mega.nz/folder/0E0QRKZL#HOyMLQ292PJ3xIE1vXbLJQ).
