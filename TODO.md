@@ -1,7 +1,5 @@
 ## TODO
 - [ ] Move docs to `gh-pages`
-- [ ] Сделать цветной выхлоп `make_libs_list.py`
-- [ ] Реализовать копирование в буфер обмена, при выхлопе в терминал
 - [ ] Script for automatic make release **zip**
 - [ ] Make binary archives with this launcher for vanilla and forge version
 
