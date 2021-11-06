@@ -1,4 +1,1 @@
-## Minecraft [Java Edition] Batch Launcher
-[Site](https://iiiypuk.github.io/minecraft-launcher/)
-
-![.](docs/_media/portable/02-directory.png)
+Documentation [site](https://iiiypuk.github.io/minecraft-launcher/) built by [docsify](https://docsify.js.org/).
