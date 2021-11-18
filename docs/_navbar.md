@@ -4,4 +4,4 @@
 
 - Translations
   - [🇷🇺 Русский](/)
-  - [🇺🇸 English](/en/)
+  - [🇺🇸 English](/en-us/)

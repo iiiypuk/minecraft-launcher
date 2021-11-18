@@ -10,6 +10,6 @@
 * ⚙️ Нет необходимости в настройке
 
 [GitHub](https://github.com/iiiypuk/minecraft-launcher/)
-[Начать](about)
+[Начать](README)
 
 ![color](#F8F8F8)
