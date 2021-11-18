@@ -2,7 +2,7 @@
 
 - Getting start
 
-  - [Installing](installing.md)
-  - [Variables](variables.md)
+  - [Installing](/en-us/installing.md)
+  - [Variables](/en-us/variables.md)
 
-- [ChangeLog](../changelog.md)
+- [ChangeLog](changelog.md)
