@@ -14,10 +14,10 @@ set GAME_DIR=%MC_DIR%
 
 :: libraries and resource dir (requires no changes)
 set ASSETS_DIR=%MC_DIR%\assets
-set ASSETS_INDEX=1.17
+set ASSETS_INDEX=1.18
 
 :: version minecraft (from versions/ dir)
-set GAME_VERSION=1.17.1
+set GAME_VERSION=1.18.2
 
 :: get archive from natives/ dir
 set NATIVES_DIR=%MC_DIR%\bin\%GAME_VERSION%

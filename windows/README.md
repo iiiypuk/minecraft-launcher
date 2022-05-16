@@ -1,2 +1,4 @@
-## Java SE Download
-Oracle JavaSE JDK 16 [download](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html).
+## Java minimum version
+For run Minecraft need Java **17.0.1**.
+
+[Proof](https://minecraft.fandom.com/wiki/Tutorials/Update_Java).
