@@ -2,7 +2,7 @@
 echo -ne "\033]2;Minecraft Launcher\007"
 
 # Set username
-read -p "What username would you like?: " player
+read -p "What username would you like? " player
 
 # A minecraft root directory
 MC_DIR=~/.minecraft
