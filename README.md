@@ -18,3 +18,10 @@
 
 ⬇️ [Download](https://git.a2s.su/iiiypuk/minecraft-launcher/releases)
 ⬇️ [Скачать](https://git.a2s.su/iiiypuk/minecraft-launcher/releases)
+
+
+**Current version:**
+
+🐧 [Linux](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/linux/minecraft_vanilla.bat)
+🪟 [Windows](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/windows/minecraft_vanilla.bat)
+🍎 [macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/macos/minecraft_vanilla.bat)
