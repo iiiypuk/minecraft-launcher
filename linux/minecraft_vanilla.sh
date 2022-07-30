@@ -5,7 +5,7 @@ echo -ne "\033]2;Minecraft Launcher\007"
 read -p "What username would you like? " player
 
 # A minecraft root directory
-MC_DIR=~/.minecraft
+MC_DIR=$HOME/.minecraft
 
 # Are stored here...
 # saves/, resourcepacks/ and screenshots/ dirs
@@ -17,10 +17,64 @@ ASSETS_DIR=$MC_DIR/assets
 ASSETS_INDEX=1.19
 
 # Version minecraft (from versions/ dir)
-GAME_VERSION=1.19
+GAME_VERSION=1.19.1
 
 # *.jar paths from version.json
-LIBRARIES_LIST="$MC_DIR/libraries/com/mojang/logging/1.0.0/logging-1.0.0.jar:$MC_DIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:$MC_DIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:$MC_DIR/libraries/com/github/oshi/oshi-core/5.8.5/oshi-core-5.8.5.jar:$MC_DIR/libraries/net/java/dev/jna/jna/5.10.0/jna-5.10.0.jar:$MC_DIR/libraries/net/java/dev/jna/jna-platform/5.10.0/jna-platform-5.10.0.jar:$MC_DIR/libraries/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.jar:$MC_DIR/libraries/org/apache/logging/log4j/log4j-slf4j18-impl/2.17.0/log4j-slf4j18-impl-2.17.0.jar:$MC_DIR/libraries/com/ibm/icu/icu4j/70.1/icu4j-70.1.jar:$MC_DIR/libraries/com/mojang/javabridge/1.2.24/javabridge-1.2.24.jar:$MC_DIR/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:$MC_DIR/libraries/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar:$MC_DIR/libraries/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar:$MC_DIR/libraries/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final-linux-aarch_64.jar:$MC_DIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:$MC_DIR/libraries/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:$MC_DIR/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:$MC_DIR/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:$MC_DIR/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:$MC_DIR/libraries/com/mojang/brigadier/1.0.18/brigadier-1.0.18.jar:$MC_DIR/libraries/com/mojang/datafixerupper/5.0.28/datafixerupper-5.0.28.jar:$MC_DIR/libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:$MC_DIR/libraries/com/mojang/authlib/3.5.41/authlib-3.5.41.jar:$MC_DIR/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:$MC_DIR/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:$MC_DIR/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:$MC_DIR/libraries/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:$MC_DIR/libraries/it/unimi/dsi/fastutil/8.5.6/fastutil-8.5.6.jar:$MC_DIR/libraries/org/apache/logging/log4j/log4j-api/2.17.0/log4j-api-2.17.0.jar:$MC_DIR/libraries/org/apache/logging/log4j/log4j-core/2.17.0/log4j-core-2.17.0.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-windows.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-windows-x86.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-linux.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-macos.jar:$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-macos-arm64.jar:$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9.jar:$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9-natives-windows.jar:$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9-natives-linux.jar:$MC_DIR/libraries/ca/weblite/java-objc-bridge/1.1/java-objc-bridge-1.1.jar:$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
+LIBRARIES_LIST="\
+$MC_DIR/libraries/com/mojang/logging/1.0.0/logging-1.0.0.jar:\
+$MC_DIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:\
+$MC_DIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:\
+$MC_DIR/libraries/com/github/oshi/oshi-core/5.8.5/oshi-core-5.8.5.jar:\
+$MC_DIR/libraries/net/java/dev/jna/jna/5.10.0/jna-5.10.0.jar:\
+$MC_DIR/libraries/net/java/dev/jna/jna-platform/5.10.0/jna-platform-5.10.0.jar:\
+$MC_DIR/libraries/org/slf4j/slf4j-api/1.8.0-beta4/slf4j-api-1.8.0-beta4.jar:\
+$MC_DIR/libraries/org/apache/logging/log4j/log4j-slf4j18-impl/2.17.0/log4j-slf4j18-impl-2.17.0.jar:\
+$MC_DIR/libraries/com/ibm/icu/icu4j/70.1/icu4j-70.1.jar:\
+$MC_DIR/libraries/com/mojang/javabridge/1.2.24/javabridge-1.2.24.jar:\
+$MC_DIR/libraries/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:\
+$MC_DIR/libraries/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar:\
+$MC_DIR/libraries/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar:\
+$MC_DIR/libraries/io/netty/netty-transport-native-epoll/4.1.77.Final/netty-transport-native-epoll-4.1.77.Final-linux-aarch_64.jar:\
+$MC_DIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:\
+$MC_DIR/libraries/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:\
+$MC_DIR/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:\
+$MC_DIR/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:\
+$MC_DIR/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:\
+$MC_DIR/libraries/com/mojang/brigadier/1.0.18/brigadier-1.0.18.jar:\
+$MC_DIR/libraries/com/mojang/datafixerupper/5.0.28/datafixerupper-5.0.28.jar:\
+$MC_DIR/libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:\
+$MC_DIR/libraries/com/mojang/authlib/3.11.50/authlib-3.11.50.jar:\
+$MC_DIR/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:\
+$MC_DIR/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:\
+$MC_DIR/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:\
+$MC_DIR/libraries/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:\
+$MC_DIR/libraries/it/unimi/dsi/fastutil/8.5.6/fastutil-8.5.6.jar:\
+$MC_DIR/libraries/org/apache/logging/log4j/log4j-api/2.17.0/log4j-api-2.17.0.jar:\
+$MC_DIR/libraries/org/apache/logging/log4j/log4j-core/2.17.0/log4j-core-2.17.0.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.1/lwjgl-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.1/lwjgl-jemalloc-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.1/lwjgl-openal-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.1/lwjgl-opengl-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.1/lwjgl-glfw-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.1/lwjgl-stb-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.1/lwjgl-tinyfd-3.3.1-natives-linux.jar:\
+$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9.jar:\
+$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9-natives-linux.jar:\
+$MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
 
 # Player nickname (the over head)
 PLAYER_NAME=$player
@@ -36,7 +90,8 @@ JVM_ARGS="-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 
 # Running minecraft
 cd $MC_DIR
 
-java $JVM_RAM $JVM_ARGS \
+$HOME/.minecraft/runtime/java-runtime-gamma/linux/java-runtime-gamma/bin/java \
+$JVM_RAM $JVM_ARGS \
 -cp $LIBRARIES_LIST \
 net.minecraft.client.main.Main \
 --username $PLAYER_NAME \
