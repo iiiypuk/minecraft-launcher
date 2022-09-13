@@ -1,5 +1,9 @@
-rem @echo off
+@echo off
 title Minecraft Launcher
+
+echo Minecraft Launcher by iiiypuk
+echo =============================
+echo Preparing...
 
 :: set username
 set /p PLAYER=What username would you like? 
