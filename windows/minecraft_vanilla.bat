@@ -20,7 +20,8 @@ set ASSETS_INDEX=1.19
 set GAME_VERSION=1.19.2
 
 :: *.jar paths from version.json
-set LIBRARIES_LIST=%MC_DIR%/libraries/com/mojang/logging/1.0.0/logging-1.0.0.jar;^
+set LIBRARIES_LIST=^
+%MC_DIR%/libraries/com/mojang/logging/1.0.0/logging-1.0.0.jar;^
 %MC_DIR%/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar;^
 %MC_DIR%/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar;^
 %MC_DIR%/libraries/com/github/oshi/oshi-core/5.8.5/oshi-core-5.8.5.jar;^
@@ -47,7 +48,7 @@ set LIBRARIES_LIST=%MC_DIR%/libraries/com/mojang/logging/1.0.0/logging-1.0.0.jar
 %MC_DIR%/libraries/com/mojang/brigadier/1.0.18/brigadier-1.0.18.jar;^
 %MC_DIR%/libraries/com/mojang/datafixerupper/5.0.28/datafixerupper-5.0.28.jar;^
 %MC_DIR%/libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar;^
-%MC_DIR%/libraries/com/mojang/authlib/3.11.50/authlib-3.11.50.jar;^
+%MC_DIR%/libraries/com/mojang/authlib/3.11.49/authlib-3.11.49.jar;^
 %MC_DIR%/libraries/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar;^
 %MC_DIR%/libraries/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar;^
 %MC_DIR%/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;^
