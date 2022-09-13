@@ -7,6 +7,7 @@ echo Preparing...
 
 :: set username
 set /p PLAYER=What username would you like? 
+IF [%PLAYER%] == [] set PLAYER=Steve
 
 :: main directory of the game
 set MC_DIR=%APPDATA%\.minecraft
