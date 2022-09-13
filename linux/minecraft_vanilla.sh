@@ -1,8 +1,15 @@
 #!/bin/sh
 echo -ne "\033]2;Minecraft Launcher\007"
 
+# Launcher title
+echo "Minecraft Launcher by iiiypuk"
+echo "============================="
+
 # Set username
 read -p "What username would you like? " player
+if [ ! $player ]; then
+   player="Steve"
+fi
 
 # A minecraft root directory
 MC_DIR=$HOME/.minecraft
