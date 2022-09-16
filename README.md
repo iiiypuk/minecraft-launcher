@@ -17,4 +17,4 @@
 * 🐧 [Linux](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/linux/minecraft_vanilla.sh)  
 * 🪟 [Windows](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/windows/minecraft_vanilla.bat)  
 * 🍎 [macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/macos/minecraft_vanilla.sh)  
-* ⬇️ [Releases](https://git.a2s.su/iiiypuk/minecraft-launcher/releases)
+* ⬇️ [Latest](https://git.a2s.su/iiiypuk/minecraft-launcher/releases/latest)
