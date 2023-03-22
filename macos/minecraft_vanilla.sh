@@ -21,7 +21,7 @@ GAME_DIR=$MC_DIR
 
 # Libraries and resource dir (requires no changes)
 ASSETS_DIR=$MC_DIR/assets
-ASSETS_INDEX=1.19
+ASSETS_INDEX=3
 
 # Version minecraft (from versions/ dir)
 GAME_VERSION=1.19.4

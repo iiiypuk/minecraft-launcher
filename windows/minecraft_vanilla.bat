@@ -18,7 +18,7 @@ set GAME_DIR=%MC_DIR%
 
 :: libraries and resource dir (requires no changes)
 set ASSETS_DIR=%MC_DIR%\assets
-set ASSETS_INDEX=1.19
+set ASSETS_INDEX=3
 
 :: version minecraft (from versions/ dir)
 set GAME_VERSION=1.19.4
