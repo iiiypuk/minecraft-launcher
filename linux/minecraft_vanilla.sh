@@ -21,10 +21,10 @@ GAME_DIR=$MC_DIR
 
 # Libraries and resource dir (requires no changes)
 ASSETS_DIR=$MC_DIR/assets
-ASSETS_INDEX=3
+ASSETS_INDEX=5
 
 # Version minecraft (from versions/ dir)
-GAME_VERSION=1.19.4
+GAME_VERSION=1.20.1
 
 # *.jar paths from version.json
 LIBRARIES_LIST="\
@@ -33,14 +33,13 @@ $MC_DIR/libraries/com/google/code/gson/gson/2.10/gson-2.10.jar:\
 $MC_DIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:\
 $MC_DIR/libraries/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:\
 $MC_DIR/libraries/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:\
-$MC_DIR/libraries/com/mojang/authlib/3.18.38/authlib-3.18.38.jar:\
+$MC_DIR/libraries/com/mojang/authlib/4.0.43/authlib-4.0.43.jar:\
 $MC_DIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:\
-$MC_DIR/libraries/com/mojang/brigadier/1.0.18/brigadier-1.0.18.jar:\
-$MC_DIR/libraries/com/mojang/datafixerupper/6.0.6/datafixerupper-6.0.6.jar:\
+$MC_DIR/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:\
+$MC_DIR/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:\
 $MC_DIR/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:\
 $MC_DIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:\
-$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9.jar:\
-$MC_DIR/libraries/com/mojang/text2speech/1.13.9/text2speech-1.13.9-natives-linux.jar:\
+$MC_DIR/libraries/com/mojang/text2speech/1.17.9/text2speech-1.17.9.jar:\
 $MC_DIR/libraries/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:\
 $MC_DIR/libraries/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:\
 $MC_DIR/libraries/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:\
