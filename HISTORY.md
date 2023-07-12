@@ -6,6 +6,9 @@
 - ℹ️ - Information
 - ♻️ - Edited
 
+## 13/07/2023 - (1.20.1 Update) **beta**
+- ℹ️ - Client updated to 1.20.1 version
+
 ## 22/03/2023 - (1.19.4 Update)
 - ℹ️ - Client updated to 1.19.4 version
 - ✔️ - Fixed quotes in set variables for Windows launcher
