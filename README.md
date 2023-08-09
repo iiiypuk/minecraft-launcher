@@ -24,5 +24,5 @@
 
 **Forge:**
 
-* 🪟 [Windows](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/windows/minecraft_vanilla.bat)  
-* 🖥️ [Linux/macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/linux/minecraft_vanilla.sh)  
+* 🪟 [Windows `1.16.5-forge-36.2.34`](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/forge/1.16.5-forge-36.2.34/1.16.5-forge-36.2.34-windows.bat)  
+* 🖥️ [Linux/macOS `1.20.1-forge-47.1.43`](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/forge/1.20.1-forge-47.1.43/1.20.1-forge-47.1.43-unix.sh)  
