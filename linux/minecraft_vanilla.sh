@@ -96,7 +96,7 @@ JVM_ARGS="-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 
 # Running minecraft
 cd $MC_DIR
 
-$HOME/.minecraft/runtime/java-runtime-gamma/linux/java-runtime-gamma/bin/java \
+$MC_DIR/runtime/java-runtime-gamma/linux/java-runtime-gamma/bin/java \
 $JVM_RAM $JVM_ARGS \
 -cp $LIBRARIES_LIST \
 net.minecraft.client.main.Main \
