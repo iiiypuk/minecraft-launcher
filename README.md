@@ -14,7 +14,15 @@
 
 # 🏁 Releases 🏁
 
-* 🐧 [Linux](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/linux/minecraft_vanilla.sh)  
+* ⬇️ [Latest release `1.20.1`](https://git.a2s.su/iiiypuk/minecraft-launcher/releases/latest)
+
+**Vanilla:**
+
+* 🐧 [Linux](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/vanilla/1.20.1/1.20.1-vanilla-linux.sh)  
+* 🪟 [Windows](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/vanilla/1.20.1/1.20.1-vanilla-windows.bat)  
+* 🍎 [macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/vanilla/1.20.1/1.20.1-vanilla-macos.sh)  
+
+**Forge:**
+
 * 🪟 [Windows](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/windows/minecraft_vanilla.bat)  
-* 🍎 [macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/macos/minecraft_vanilla.sh)  
-* ⬇️ [Latest](https://git.a2s.su/iiiypuk/minecraft-launcher/releases/latest)
+* 🖥️ [Linux/macOS](https://git.a2s.su/iiiypuk/minecraft-launcher/raw/branch/master/linux/minecraft_vanilla.sh)  
