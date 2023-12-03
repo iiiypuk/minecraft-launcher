@@ -6,6 +6,9 @@
 - ℹ️ - Information
 - ♻️ - Edited
 
+## 03/12/2023 - (1.20.2 Update) **beta**
+- ℹ️ - Linux client updated to 1.20.2 version
+
 ## 13/07/2023 - (1.20.1 Update) **beta**
 - ℹ️ - Client updated to 1.20.1 version
 

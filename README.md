@@ -14,7 +14,7 @@
 
 # 🏁 Releases 🏁
 
-* ⬇️ [Latest release `1.20.1`](https://git.a2s.su/iiiypuk/minecraft-launcher/releases/latest)
+* ⬇️ [Latest release `1.20.2`](https://git.a2s.su/iiiypuk/minecraft-launcher/releases/latest)
 
 **Vanilla:**
 
