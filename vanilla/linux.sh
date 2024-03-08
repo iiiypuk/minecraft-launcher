@@ -27,7 +27,7 @@ ASSETS_DIR=$MC_DIR/assets
 ASSETS_INDEX=5
 
 # Version minecraft (from versions/ dir)
-GAME_VERSION=1.20.2
+GAME_VERSION=1.20.4
 
 # *.jar paths from version.json
 LIBRARIES_LIST="\
@@ -36,9 +36,9 @@ $MC_DIR/libraries/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:\
 $MC_DIR/libraries/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:\
 $MC_DIR/libraries/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:\
 $MC_DIR/libraries/com/ibm/icu/icu4j/73.2/icu4j-73.2.jar:\
-$MC_DIR/libraries/com/mojang/authlib/5.0.47/authlib-5.0.47.jar:\
+$MC_DIR/libraries/com/mojang/authlib/6.0.52/authlib-6.0.52.jar:\
 $MC_DIR/libraries/com/mojang/blocklist/1.0.10/blocklist-1.0.10.jar:\
-$MC_DIR/libraries/com/mojang/brigadier/1.1.8/brigadier-1.1.8.jar:\
+$MC_DIR/libraries/com/mojang/brigadier/1.2.9/brigadier-1.2.9.jar:\
 $MC_DIR/libraries/com/mojang/datafixerupper/6.0.8/datafixerupper-6.0.8.jar:\
 $MC_DIR/libraries/com/mojang/logging/1.1.1/logging-1.1.1.jar:\
 $MC_DIR/libraries/com/mojang/patchy/2.2.10/patchy-2.2.10.jar:\
