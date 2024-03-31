@@ -1,3 +1,13 @@
+# 🇺🇸 Assets downloader
+
+> ⚠️ write it...
+
+# 🇷🇺 Загрузчик ассетов
+
+Утилита, которая встраивается в основной скрипт и скачивает ассеты из сети.
+
+Используется программа на **Си** для парсинга файла индексов ассетов.
+
 ## About assets
 
 The game itself downloads (through the launcher) further resources from
