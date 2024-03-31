@@ -8,7 +8,7 @@ echo "============================="
 # Set username
 read -p "What username would you like? " player
 if [ ! $player ]; then
-   player="Steve"
+    player="Steve"
 fi
 
 # A minecraft root directory
