@@ -30,7 +30,7 @@ GAME_DIR=$MC_DIR/userdata
 
 # Libraries and resource dir (requires no changes)
 ASSETS_DIR=$MC_DIR/assets
-ASSETS_INDEX=5
+ASSETS_INDEX=12
 
 # Version minecraft (from versions/ dir)
 GAME_VERSION=1.20.4
@@ -76,33 +76,33 @@ $MC_DIR/libraries/org/apache/logging/log4j/log4j-core/2.19.0/log4j-core-2.19.0.j
 $MC_DIR/libraries/org/apache/logging/log4j/log4j-slf4j2-impl/2.19.0/log4j-slf4j2-impl-2.19.0.jar:\
 $MC_DIR/libraries/org/joml/joml/1.10.5/joml-1.10.5.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-glfw/3.3.2/lwjgl-glfw-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-jemalloc/3.3.2/lwjgl-jemalloc-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-openal/3.3.2/lwjgl-openal-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-opengl/3.3.2/lwjgl-opengl-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-stb/3.3.2/lwjgl-stb-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl-tinyfd/3.3.2/lwjgl-tinyfd-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-windows.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-windows-arm64.jar:\
-$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-windows-x86.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-linux.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-linux-arm64.jar:\
+$MC_DIR/libraries/org/lwjgl/lwjgl/3.3.2/lwjgl-3.3.2-natives-linux-x86.jar:\
 $MC_DIR/libraries/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:\
 $MC_DIR/versions/$GAME_VERSION/$GAME_VERSION.jar"
 
