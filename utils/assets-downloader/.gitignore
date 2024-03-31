@@ -1,0 +1,7 @@
+# XMake
+build/
+.xmake/
+
+# Assets
+assets/
+*.data
