@@ -15,13 +15,10 @@ fi
 # A minecraft root directory
 MC_DIR=$HOME/.minecraft
 
-# Get archive from natives/ dir
-NATIVES_DIR=$MC_DIR/bin/1.20.2
-
 # Are stored here...
 # saves/, resourcepacks/ and screenshots/ dirs
 # and options.txt and servers.dat files
-GAME_DIR=$MC_DIR
+GAME_DIR=$MC_DIR/userdata
 
 # Libraries and resource dir (requires no changes)
 ASSETS_DIR=$MC_DIR/assets
@@ -29,6 +26,9 @@ ASSETS_INDEX=5
 
 # Version minecraft (from versions/ dir)
 GAME_VERSION=1.20.4
+
+# Get archive from natives/ dir
+NATIVES_DIR=$MC_DIR/bin/$GAME_VERSION
 
 # *.jar paths from version.json
 LIBRARIES_LIST="\
@@ -109,9 +109,13 @@ WINDOW_H=640
 JVM_RAM="-Xmx2G"
 JVM_ARGS="-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M"
 
-# Running minecraft
+# Change directory
 cd $MC_DIR
 
+# Prepare game directory
+mkdir -p $MC_DIR/userdata
+
+# Running minecraft
 $MC_DIR/runtime/java-runtime-gamma/linux/java-runtime-gamma/bin/java \
 $JVM_RAM $JVM_ARGS \
 -cp $LIBRARIES_LIST \
