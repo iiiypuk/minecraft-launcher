@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Checking cURL command
+if ! [ -x "$(command -v curl)" ]; then
+    echo "curl not available"
+    exit 1
+fi
+
 UTILITY=$(mktemp)
 base64 -d assets-x86_64-linux.data > $UTILITY
 chmod +x $UTILITY
@@ -13,22 +19,30 @@ mkdir -p $ASSETS_DIR
 FILE_COUNTER=0
 for FILE in $ASSETS
 do
+    # get hash and size asset
     HASH=$(echo $FILE | cut -d ":" -f 1)
     SIZE=$(echo $FILE | cut -d ":" -f 2)
 
+    # make hash directory (first 2 hex letters of hash)
     HASH_DIR=$ASSETS_DIR/${HASH:0:2}
     mkdir -p $HASH_DIR
 
+    # download asset
     if ! [ -f $HASH_DIR/$HASH ]; then
       curl --silent -o $HASH_DIR/$HASH "https://resources.download.minecraft.net/${HASH:0:2}/$HASH"
     fi
 
+    # check asset file size
     FILE_SIZE=$(wc -c $HASH_DIR/$HASH | cut -d " " -f 1)
     if (( $FILE_SIZE != $SIZE )); then
         rm $HASH_DIR/$HASH
         echo "Error download: $HASH"
     fi
 
+    # Echo progress
     FILE_COUNTER=$(($FILE_COUNTER + 1))
     echo -e "Progress: $FILE_COUNTER/$FILES"
 done
+
+# TODO
+# - use `wget` if `curl` not available
