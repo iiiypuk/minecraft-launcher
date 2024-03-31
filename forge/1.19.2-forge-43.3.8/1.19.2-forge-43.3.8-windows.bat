@@ -9,7 +9,7 @@ set /p PLAYER=What username would you like?
 IF [%PLAYER%] == [] set PLAYER=Steve
 
 :: main directory of the game
-set MC_DIR=.\
+set MC_DIR=%APPDATA%\.minecraft
 
 :: Are stored here...
 :: saves/, resourcepacks/ and screenshots/ dirs
@@ -135,7 +135,7 @@ cd /d %MC_DIR%
 java.exe %JVM_RAM% %JVM_ARGS% ^
 -Djava.net.preferIPv6Addresses=system ^
 -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,1.20.1-forge-47.1.43.jar ^
--p %MC_DIR%/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;%MC_DIR%/libraries/cpw/mods/securejarhandler/2.1.4/securejarhandler-2.1.4.jar;%MC_DIR%/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar;%MC_DIR%/libraries/net/minecraftforge/JarJarFileSystems/0.3.16/JarJarFileSystems-0.3.16.jar \
+-p %MC_DIR%/libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;%MC_DIR%/libraries/cpw/mods/securejarhandler/2.1.4/securejarhandler-2.1.4.jar;%MC_DIR%/libraries/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar;%MC_DIR%/libraries/org/ow2/asm/asm/9.5/asm-9.5.jar;%MC_DIR%/libraries/net/minecraftforge/JarJarFileSystems/0.3.16/JarJarFileSystems-0.3.16.jar ^
 -cp %LIBRARIES_LIST% ^
 --add-modules ALL-MODULE-PATH ^
 --add-opens java.base/java.lang.invoke=ALL-UNNAMED ^
@@ -144,7 +144,7 @@ java.exe %JVM_RAM% %JVM_ARGS% ^
 --add-exports java.base/sun.security.util=cpw.mods.securejarhandler ^
 --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming ^
 -DignoreList=bootstraplauncher-1.1.2.jar,securejarhandler-2.1.4.jar,asm-commons-9.5.jar,asm-util-9.5.jar,asm-analysis-9.5.jar,asm-tree-9.5.jar,asm-9.5.jar,JarJarFileSystems-0.3.16.jar ^
--DlibraryDirectory=$MC_DIR/libraries ^
+-DlibraryDirectory=%MC_DIR%/libraries ^
 cpw.mods.bootstraplauncher.BootstrapLauncher ^
 --launchTarget forgeclient ^
 --fml.forgeVersion 43.3.8 ^
