@@ -1,4 +1,4 @@
 # TODO
 
-- [ ] assets downloader
+- [x] assets downloader
 - [ ] library downloader
