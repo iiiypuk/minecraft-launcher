@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Git repo: https://git.a2s.su/iiiypuk/minecraft-launcher
+
 # include colors library
 source ./colors.sh
 
