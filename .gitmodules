@@ -1,0 +1,3 @@
+[submodule "deps/colors.sh"]
+	path = deps/colors.sh
+	url = https://git.a2s.su/iiiypuk/colors.sh.git

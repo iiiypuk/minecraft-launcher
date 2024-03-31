@@ -1,5 +1,6 @@
 #!/bin/sh
-echo -ne "\033]2;Minecraft Launcher\007"
+
+echo -ne "\033]30;Minecraft Launcher\007"
 
 # Launcher title
 echo "Minecraft Launcher by iiiypuk"
