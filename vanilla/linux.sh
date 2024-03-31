@@ -1,16 +1,22 @@
 #!/bin/sh
 
+# include colors library
+source ./colors.sh
+
+# Setting terminal emulator title
 echo -ne "\033]30;Minecraft Launcher\007"
+clear
 
 # Launcher title
-echo "Minecraft Launcher by iiiypuk"
-echo "============================="
+echo -e "${BRIGHT_GREEN_B}Minecraft Launcher by ${BRIGHT_RED_B}iiiypuk${NC}"
+echo -e "${BRIGHT_YELLOW_B}=============================${NC}"
 
 # Set username
-read -p "What username would you like? " player
+read -p "$(echo -e ${BRIGHT_CYAN_B}What username would you like?${NC}) " player
 if [ ! $player ]; then
     player="Steve"
 fi
+echo ''
 
 # A minecraft root directory
 MC_DIR=$HOME/.minecraft
